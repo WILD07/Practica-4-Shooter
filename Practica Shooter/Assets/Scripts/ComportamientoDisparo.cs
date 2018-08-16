@@ -50,6 +50,7 @@ public class ComportamientoDisparo : MonoBehaviour {
 			puntos += 3.448275862068966f;
 			puntos = Mathf.Round (puntos);
 		}
+        Debug.Log(puntos);
 
 	}
 }

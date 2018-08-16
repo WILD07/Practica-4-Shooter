@@ -55,7 +55,7 @@ public class GvrEditorEmulator : MonoBehaviour {
     IEnumerator<Camera> validCameras = ValidCameras();
     while (validCameras.MoveNext()) {
       Camera cam = validCameras.Current;
-      cam.transform.localPosition = HeadPosition * cam.transform.lossyScale.y;
+      //cam.transform.localPosition = HeadPosition * cam.transform.lossyScale.y;
       cam.transform.localRotation = HeadRotation;
     }
   }
@@ -95,7 +95,7 @@ public class GvrEditorEmulator : MonoBehaviour {
     IEnumerator<Camera> validCameras = ValidCameras();
     while (validCameras.MoveNext()) {
       Camera cam = validCameras.Current;
-      cam.transform.localPosition = HeadPosition * cam.transform.lossyScale.y;
+      //cam.transform.localPosition = HeadPosition * cam.transform.lossyScale.y;
       cam.transform.localRotation = HeadRotation;
     }
   }
