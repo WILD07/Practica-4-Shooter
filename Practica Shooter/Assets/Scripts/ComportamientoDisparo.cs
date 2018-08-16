@@ -41,7 +41,7 @@ public class ComportamientoDisparo : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "ObjetoADestruir1") {
+		if (other.gameObject.tag == "zombie") {
 			Destroy (other.gameObject);
 			Destroy (this.gameObject);
 			Instantiate (explosion, transform.position, transform.rotation);

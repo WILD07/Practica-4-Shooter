@@ -24,4 +24,14 @@ public class EnemigoMov : MonoBehaviour {
 	void Update () {
         nav.SetDestination(player.position);
 	}
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "bala")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+            
+        }        
+
+    }
 }
